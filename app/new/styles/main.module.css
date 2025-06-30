@@ -2,7 +2,7 @@
     background: rgb(26, 26, 26);
     position: relative;
     width: 90%;
-    border-radius: 2rem;
+    border-radius: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,4 +19,14 @@
     background-position: 0 0, 0 0, 20px 20px, 20px 20px;
     mask: linear-gradient(to left, transparent 40%, rgb(0 0 0 / .5) 65%, #151515 100%);
     -webkit-mask: linear-gradient(to left, transparent 40%, rgb(0 0 0 / .5) 65%, #151515 100%);
+}
+
+.gridBackground2{
+    background: rgb(255, 255, 255);
+    position: relative;
+    width: 90%;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
