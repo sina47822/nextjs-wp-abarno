@@ -6,8 +6,11 @@ import styles from './styles/main.module.css'
 import LogoCarousel from '@/components/Carousel/logoCarousel'
 import HeaderText from '@/components/Text/header'
 import Featureaccordion from '@/components/Feature/Accordion/Featureaccordion'
-import { FaArrowLeft } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import BrandStoryCard from './stories/StoriyCard'
+import StoriesCarousel from './stories/StoriesCarousel'
+import VerticalStepsCarousel from './steps/VerticalStepsCarousel'
+import HeroCarousel from './hero/HeroCarousel'
 const newFrontPage = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -24,28 +27,7 @@ const newFrontPage = () => {
                     </div>
                     <div>LOGO</div>
                 </nav>
-                <section className='bg-gray-100 flex items-center justify-center py-2'>
-                    <div className={styles.gridBackground}>
-                        <div className='flex items-center justify-center md:justify-between mx-auto py-10 items-center w-[90%] grid grid-cols-1 md:grid-cols-2 gap-5 '>
-                            <div className='z-2 w-[100%] md:w-[80%] flex flex-col justify-self-center md:justify-self-auto'>
-                                <div className='text-white text-bold text-3xl text-justify'>
-                                    کاهش هزینه های مالی با رعایت پیشرفته‌ترین الزامات مالی ابرنواختر
-                                </div>
-                                <div className=' text-white text-md text-justify py-8'>
-                                    راهکارهای انطباق مالی ابرنواختر کنترل‌های دقیقی بر عملیات پرداخت و حساب‌های پرداختنی ارائه می‌دهد. با استفاده از این راهکارها، امنیت داده‌های مالی حساس افزایش می‌یابد، انطباق مستمر با مقررات OFAC تضمین می‌شود و نظارت مدیریتی بر فرآیندهای کلیدی پرداخت بهبود می‌یابد.
-                                </div>
-                                <div className='grid'>
-                                    <Button variant={'destructive'} className='text-md py-6 px-4 btn-block'>
-                                        Request Demo
-                                    </Button> 
-                                </div>
-                            </div>
-                            <div className=''>
-                                <img src={'/tip/controls-compliance-header.svg'} />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <HeroCarousel />
                 <section className='bg-gray-100 pb-20 pt-5'>
                     <LogoCarousel />
                 </section>
@@ -228,15 +210,56 @@ const newFrontPage = () => {
                     </div>
                 </section>
                 
-                <section className='bg-gray-100'>
-                    <div className='flex justify-center items-center'>
-                        <div className='grid grid-cols-4'>
-                            <BrandStoryCard logo={'/images/logos/thematic.svg'} brand={'asdasd'} description={'asdasdsad'} product={'sdasdads'} region={'asdasd'} industry={'asdads'} size={'asdad'} />
-                            <BrandStoryCard logo={'/images/logos/thematic.svg'} brand={'asdasd'} description={'asdasdsad'} product={'sdasdads'} region={'asdasd'} industry={'asdads'} size={'asdad'} />
-                            <BrandStoryCard logo={'/images/logos/thematic.svg'} brand={'asdasd'} description={'asdasdsad'} product={'sdasdads'} region={'asdasd'} industry={'asdads'} size={'asdad'} />
-
+                <StoriesCarousel />
+                
+                <section className='bg-gray-100 flex items-center justify-center py-2'>
+                    <div className='w-[90%] bg-gray-200 rounded-[4rem]'>
+                        <div className='flex items-center justify-center md:justify-between mx-auto py-10 items-center w-[90%] '>
+                            <div className='flex flex-col justify-center pb-[40px] w-full grid grid-cols-1 md:grid-cols-2'>
+                                <div className='flex flex-col'>
+                                    <HeaderText content='چگونه کار می‌کند' className='mb-2' />
+                                    <h2 className='py-2 text-3xl md:text-[4rem] text-bold pt-10 pb-10'>راه‌اندازی در عرض چند هفته، نه چند ماه</h2>
+                                    <p className='text-lg text-justify pb-10'>
+                                         با پشتیبانی مشتریان به‌صورت مشارکتی و فرآیند آموزش اختصاصی، در کوتاه‌ترین زمان به بهره‌برداری می‌رسید.
+                                    </p>
+                                    <Button className="group relative inline-flex items-center bg-yellow-400 px-6 py-6 hover:bg-yellow-500 text-black rounded-xl transition-colors duration-300 w-full justify-start">
+                                          <span className="text-right"> درخواست دموی رایگان</span>
+                                          <FaArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-2" />
+                                    </Button>
+                                </div>
+                                <div className="flex flex-wrap gap-8 items-center justify-center mt-10 w-[90%]">
+                                    <VerticalStepsCarousel />
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </section>
+
+                <section className='bg-gray-100 flex items-center justify-center py-2'>
+                    <div className='w-[90%] bg-[#ffecbc] rounded-[4rem]'>
+                        <div className='flex items-center justify-center md:justify-between mx-auto py-10 items-center w-[90%] '>
+                            <div className='flex flex-col justify-center pb-[40px] w-full grid grid-cols-1 md:grid-cols-2'>
+                                <div className='flex flex-col'>
+                                    <HeaderText content='چگونه کار می‌کند' className='mb-2' />
+                                    <h2 className='py-2 text-3xl md:text-[4rem] text-bold pt-10 pb-10'>راه‌اندازی در عرض چند هفته، نه چند ماه</h2>
+                                    <p className='text-lg text-justify pb-10'>
+                                         با پشتیبانی مشتریان به‌صورت مشارکتی و فرآیند آموزش اختصاصی، در کوتاه‌ترین زمان به بهره‌برداری می‌رسید.
+                                    </p>
+                                    <Button className="group relative inline-flex items-center bg-yellow-400 px-6 py-6 hover:bg-yellow-500 text-black rounded-xl transition-colors duration-300 w-full justify-start">
+                                          <span className="text-right"> درخواست دموی رایگان</span>
+                                          <FaArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-2" />
+                                    </Button>
+                                </div>
+                                <div className="flex flex-wrap gap-8 items-center justify-center mt-10 w-[90%]">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='bg-gray-100 flex items-center justify-center py-2'>
+                    <Button>دیدن همه افتخارات</Button>
                 </section>
 
             </div>

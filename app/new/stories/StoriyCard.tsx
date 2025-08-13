@@ -6,12 +6,13 @@ interface BrandStoryProps {
   region: string;
   industry: string;
   size: string;
+  bgColor?: string; // ← رنگ بک‌گراند اختیاری
 }
 
-const BrandStoryCard = ({ logo, brand, description, product, region, industry, size }: BrandStoryProps) => {
+const BrandStoryCard = ({ logo, brand, description, product, region, industry, size, bgColor }: BrandStoryProps) => {
   return (
     <div className="min-w-[300px] max-w-sm bg-white rounded-xl shadow-md p-5 m-3 flex flex-col justify-between">
-      <div className="flex justify-center items-center mb-4 h-35 bg-red-200 rounded-xl">
+      <div className={`flex justify-center items-center mb-4 h-36 rounded-xl ${bgColor}`}>
         <img src={logo} alt={brand} className="h-10 object-contain" />
       </div>
       <h3 className="font-bold text-xl mb-2">{brand}</h3>
