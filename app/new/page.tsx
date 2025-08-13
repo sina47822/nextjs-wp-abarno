@@ -11,6 +11,7 @@ import BrandStoryCard from './stories/StoriyCard'
 import StoriesCarousel from './stories/StoriesCarousel'
 import VerticalStepsCarousel from './steps/VerticalStepsCarousel'
 import HeroCarousel from './hero/HeroCarousel'
+import NavMenu from './Nav/NavMenu'
 const newFrontPage = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -20,13 +21,7 @@ const newFrontPage = () => {
             <div
                 className='overflow-hidden w-[100%]'
             >
-                <nav className='flex mx-auto justify-between md:justify-between aligns-center py-6 px-5 rounded-4xl'>
-                    <div className='flex gap-3 items-center'>
-                        <div>Nav Menu</div>
-                        <Button variant='destructive' className='p-5 text-md' >Get Starts</Button>
-                    </div>
-                    <div>LOGO</div>
-                </nav>
+                <NavMenu />
                 <HeroCarousel />
                 <section className='bg-gray-100 pb-20 pt-5'>
                     <LogoCarousel />

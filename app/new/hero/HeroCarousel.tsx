@@ -10,7 +10,7 @@ const HeroCarousel = () => {
             <div className={styles.gridBackground}>
                 <div className='flex items-center justify-center md:justify-between mx-auto py-10 items-center w-[90%] grid grid-cols-1 md:grid-cols-2 gap-5 '>
                     <div className='z-2 w-[100%] md:w-[80%] flex flex-col justify-self-center md:justify-self-auto'>
-                        <div className='text-white text-bold text-3xl text-justify'>
+                        <div className='text-white font-bold font-yekan text-3xl text-justify'>
                             کاهش هزینه های مالی با رعایت پیشرفته‌ترین الزامات مالی ابرنواختر
                         </div>
                         <div className=' text-white text-md text-justify py-8'>
@@ -28,7 +28,7 @@ const HeroCarousel = () => {
                 </div>
             </div>
         </section>
-        <div className="swiper-button-prev-custom absolute left-2 top-1/2 -translate-y-1/2 bg-gray-300 text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer z-10">
+        {/* <div className="swiper-button-prev-custom absolute left-2 top-1/2 -translate-y-1/2 bg-gray-300 text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer z-10">
             <span className="text-xl">
                 <FaArrowLeft />
             </span>
@@ -37,7 +37,7 @@ const HeroCarousel = () => {
             <span className="text-xl">
                 <FaArrowRight />
             </span>
-        </div>
+        </div> */}
     </div>
   )
 }
