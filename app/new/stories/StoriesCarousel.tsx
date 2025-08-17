@@ -6,6 +6,7 @@ import 'swiper/css/autoplay';
 import { Navigation , Autoplay } from 'swiper/modules';
 import { Button } from '@/components/ui/button';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import HeaderText from '@/components/Text/header';
 
 
 const brandStories = [
@@ -66,9 +67,16 @@ const StoriesCarousel = () => {
   return (
     <div>
         <section className='bg-gray-100'>
-            <div className='container w-[80%] mx-auto px-10'>
-                <div className=''>
-                    <Button variant={'default'} className=''>دیدن همه مقالات</Button>
+
+            <div className='container w-[80%] mx-auto'>
+                {/* <HeaderText content='مقالات سایت' className='' />
+                <h2 className='text-3xl md:text-[3rem] font-yekan font-bold pt-6'>
+                    آموزش حسابداری،
+                    <br/>
+                    نرم افزار و قوانین
+                </h2> */}
+                <div className='py-8'>
+                    <Button variant={'destructive'} className='py-6 px-20'>دیدن همه مقالات</Button>
 
                     <Swiper
                         slidesPerView={4}

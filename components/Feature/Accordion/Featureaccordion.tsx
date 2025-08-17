@@ -5,6 +5,7 @@ import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface FeatureAccordionProps {
+  id:string;
   title: string;
   content: string;
   button: string;
@@ -14,6 +15,7 @@ interface FeatureAccordionProps {
 }
 
 const Featureaccordion = ({
+  id,
   content,
   title,
   button,
@@ -24,7 +26,8 @@ const Featureaccordion = ({
   const isActive = index === activeIndex;
 
   return (
-    <motion.div layout className="border-b py-4">
+
+    <motion.div id={id} layout className="border-b py-4 scroll-mt-40">
       <div
         onClick={() => setActiveIndex(isActive ? -1 : index)}
         className={`cursor-pointer font-semibold text-xl transition-colors duration-300 ${
@@ -45,7 +48,7 @@ const Featureaccordion = ({
             className="mt-2"
           >
             <p className="text-gray-700 text-justify">{content}</p>
-            <Button className="mt-4 bg-yellow-400 text-black hover:bg-yellow-500 font-medium px-6 py-2 rounded-full">
+            <Button className="mt-4 bg-emerald-600 text-white hover:bg-emerald-700 font-medium px-6 py-2 rounded-full cursor-pointer">
               {button}
             </Button>
           </motion.div>

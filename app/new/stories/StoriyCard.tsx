@@ -24,7 +24,7 @@ const BrandStoryCard = ({ logo, brand, description, product, region, industry, s
         <p><strong>Size:</strong> {size}</p>
       </div>
       <button className="border border-black text-black rounded-md px-4 py-2 hover:bg-black hover:text-white transition">
-        مشاهده داستان
+        مشاهده مقاله
       </button>
     </div>
   )
