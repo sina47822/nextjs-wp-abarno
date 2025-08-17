@@ -7,7 +7,7 @@ interface Props {
 const  HeaderText: React.FC<Props> = ({ content,className }) => {
   return (
     <div>
-        <span className={`text-xl border-b-[4px] border-[#ffbd01] pb-1 ${className ?? ''}`}>
+        <span className={`text-xl border-b-[4px] border-[#c8bea0] pb-1 ${className ?? ''}`}>
             {content}
         </span>
     </div>

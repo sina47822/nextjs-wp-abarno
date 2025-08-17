@@ -12,6 +12,7 @@ import StoriesCarousel from './stories/StoriesCarousel'
 import VerticalStepsCarousel from './steps/VerticalStepsCarousel'
 import HeroCarousel from './hero/HeroCarousel'
 import NavMenu from './Nav/NavMenu'
+import Footer from './Footer/Footer'
 const newFrontPage = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -294,7 +295,7 @@ const newFrontPage = () => {
                     </div>
                 </section>
                 
-                <StoriesCarousel />
+                {/* <StoriesCarousel /> */}
                 
                 <section className='bg-gray-100 flex items-center justify-center py-2'>
                     <div className='w-[90%] bg-gray-200 rounded-[4rem]'>
@@ -317,6 +318,9 @@ const newFrontPage = () => {
                             </div>
                         </div>
                     </div>
+                </section>
+                <section className='bg-gray-100 flex items-center justify-center py-2'>
+                    <Footer />        
                 </section>
             </div>
         </div>
