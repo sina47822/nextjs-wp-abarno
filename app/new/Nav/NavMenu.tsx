@@ -239,7 +239,9 @@ const NavMenu = () => {
             <Button variant="destructive" className="p-3 text-md w-full">شروع همکاری</Button>
           </div>
         )}
-        <div className="text-gray-700 font-bold">LOGO</div>
+        <div className="text-gray-700 font-bold">
+          <img src="/logo/gandom-01-02.svg" alt="abarnoakhtar-logo"  width={'150px'}/>
+        </div>
       </nav>
     </div>
   );

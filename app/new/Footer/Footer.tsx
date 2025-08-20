@@ -78,8 +78,8 @@ const Footer = () => {
           {/* بخش 4: اطلاعات تماس */}
 
           <div className="footer-contact flex flex-col items-end">
-            <img src="" alt="" />
-            <h2>LOGO</h2>
+            <img src="/logo/gandom-01-02.svg" alt="abarnoakhtar-logo"  width={'150px'}/>
+            
             <div className="mt-4 flex space-x-4 space-x-reverse">
               <a href="https://t.me/yourcompany" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-400 w-[25px]">
                 <svg width='100%' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
