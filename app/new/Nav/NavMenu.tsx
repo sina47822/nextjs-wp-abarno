@@ -129,7 +129,7 @@ const NavMenu = () => {
                   }
                 }}
               >
-                <div className="flex items-center gap-1 text-gray-700 hover:text-red-500 transition-colors">
+                <div className="flex items-center gap-1 text-gray-700 hover:text-[#FFBD01] transition-colors">
                   <a href={item.link || '#'}>{item.label}</a>
                   {item.submenu && item.submenu.length > 0 && (
                     <FaAngleDown className="text-gray-500 text-sm" />
@@ -159,7 +159,7 @@ const NavMenu = () => {
                         <a
                           key={subIndex}
                           href={sub.link}
-                          className="flex items-start gap-3 text-gray-700 hover:text-red-500 transition-colors"
+                          className="flex items-start gap-3 text-gray-700 hover:text-[#FFBD01] transition-colors"
                         >
                           {sub.image && (
                             <img
@@ -199,7 +199,7 @@ const NavMenu = () => {
             {menuItems.map((item, index) => (
               <div key={index}>
                 <div
-                  className="flex justify-between items-center cursor-pointer py-2 text-gray-700 hover:text-red-500"
+                  className="flex justify-between items-center cursor-pointer py-2 text-gray-700 hover:text-[#FFBD01]"
                   onClick={() => {
                     if (item.submenu && item.submenu.length > 0) {
                       setActiveSubMenu(activeSubMenu === index ? null : index);
@@ -227,7 +227,7 @@ const NavMenu = () => {
                             className="w-8 h-8 object-cover rounded-md border"
                           />
                         )}
-                        <a href={sub.link} className="text-gray-700 hover:text-red-500">
+                        <a href={sub.link} className="text-gray-700 hover:text-[#FFBD01]">
                           {sub.label}
                         </a>
                       </li>

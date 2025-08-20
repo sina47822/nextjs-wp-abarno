@@ -26,19 +26,19 @@ export default function SvgAnimation() {
       </text>
       <rect id="rect1" x="30" y="160" rx="14" ry="25" width="115" height="60" fill="#7a663f25" />
 
-      <line id="line1" x1="150" y1="195" x2="250" y2="100" stroke="#8a8a8a" strokeWidth="3" />
+      <line id="line1" x1="150" y1="200" x2="250" y2="100" stroke="#8a8a8a" strokeWidth="3" />
       <text id="text2" x="260" y="100" fontSize="24" fill="white" className="font-dana">
         سیستماتیک
       </text>
       <rect id="rect2" x="260" y="60" rx="14" ry="25" width="120" height="60" fill="#7a663f25" />
 
-      <line id="line2" x1="150" y1="195" x2="250" y2="200" stroke="#8a8a8a" strokeWidth="3" />
+      <line id="line2" x1="150" y1="200" x2="250" y2="200" stroke="#8a8a8a" strokeWidth="3" />
       <text id="text3" x="300" y="200" fontSize="24" fill="white" className="font-dana">
         امن
       </text>
       <rect id="rect3" x="260" y="160" rx="14" ry="25" width="120" height="60" fill="#7a663f25" />
 
-      <line id="line3" x1="150" y1="195" x2="250" y2="300" stroke="#8a8a8a" strokeWidth="3" />
+      <line id="line3" x1="150" y1="200" x2="250" y2="300" stroke="#8a8a8a" strokeWidth="3" />
       <text id="text4" x="285" y="300" fontSize="24" fill="white" className="font-dana">
         تطبیقی
       </text>
