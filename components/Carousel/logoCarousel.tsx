@@ -14,16 +14,19 @@ export default function LogoCarousel() {
     '/tip/kaleris-logo.svg',
     '/tip/kaleris-logo.svg',
     '/tip/kaleris-logo.svg',
+    '/tip/kaleris-logo.svg',
+    '/tip/kaleris-logo.svg',
+    '/tip/kaleris-logo.svg',
   ];
 
   return (
     <section className='py-2'>
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={4}
+        slidesPerView={6}
         loop={true}
         speed={7000}
-        spaceBetween={30}
+        spaceBetween={10}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -34,7 +37,7 @@ export default function LogoCarousel() {
         {logos.map((src, index) => (
           <SwiperSlide key={index}>
             <div className="flex items-center justify-center h-[100px]">
-              <img src={src} alt={`logo-${index}`} className="h-24" />
+              <img src={src} alt={`logo-${index}`} className="h-10" />
             </div>
           </SwiperSlide>
         ))}

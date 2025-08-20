@@ -48,7 +48,7 @@ const Featureaccordion = ({
             className="mt-2"
           >
             <p className="text-gray-700 text-justify">{content}</p>
-            <Button className="mt-4 bg-emerald-600 text-white hover:bg-emerald-700 font-medium px-6 py-2 rounded-full cursor-pointer">
+            <Button className="mt-4 bg-[#FFBD01] text-black hover:bg-[#FFBD01]/80 font-medium px-6 py-2 rounded-full cursor-pointer">
               {button}
             </Button>
           </motion.div>

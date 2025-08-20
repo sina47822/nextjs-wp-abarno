@@ -2,10 +2,10 @@
 
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
+import { Mousewheel, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import { FaArrowAltCircleUp, FaArrowDown, FaArrowUp, FaRegArrowAltCircleDown } from 'react-icons/fa'
+import { FaArrowAltCircleUp, FaArrowDown, FaArrowLeft, FaArrowRight, FaArrowUp, FaRegArrowAltCircleDown } from 'react-icons/fa'
 
 // داده نمونه مراحل
 const steps = [
@@ -61,31 +61,50 @@ const steps = [
 
 const VerticalStepsCarousel = () => {
   return (
-    <div className="w-full max-w-md mx-auto relative h-[500px]">
-      {/* دکمه بالا */}
-      <div className="swiper-button-prev-custom absolute top-1/2 left-0 -translate-x-20 -translate-y-15 z-10 bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center text-white cursor-pointer">
+    <div className="w-full max-w-md md:max-w-6xl mx-auto relative h-[800px] md:h-full">
+      {/* دکمه‌های ناوبری */}
+      {/* موبایل (عمودی) */}
+      <div className="swiper-button-prev-custom absolute top-1/2 left-0 -translate-x-10 -translate-y-15 z-10 bg-gray-800 rounded-full w-6 h-10 flex items-center justify-center text-white cursor-pointer lg:hidden">
         <FaArrowUp />
       </div>
-
-      {/* دکمه پایین */}
-      <div className="swiper-button-next-custom absolute bottom-1/2 left-0 -translate-x-20 translate-y-15 z-10 bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center text-white cursor-pointer">
+      <div className="swiper-button-next-custom absolute bottom-1/2 left-0 -translate-x-10 translate-y-15 z-10 bg-gray-800 rounded-full w-6 h-10 flex items-center justify-center text-white cursor-pointer lg:hidden">
         <FaArrowDown />
       </div>
 
+      {/* دسکتاپ (افقی) */}
+
+      <div className="swiper-button-next-custom absolute top-1/2 -left-16 hidden lg:flex z-10 bg-gray-800 rounded-full w-10 h-10 items-center justify-center text-white cursor-pointer">
+          <FaArrowLeft />
+      </div>
+      <div className="swiper-button-prev-custom absolute top-1/2 -right-16 hidden lg:flex z-10 bg-gray-800 rounded-full w-10 h-10 items-center justify-center text-white cursor-pointer">
+        <FaArrowRight />
+      </div>
       <Swiper
-        direction="vertical"
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={30}
         navigation={{
           nextEl: '.swiper-button-next-custom',
           prevEl: '.swiper-button-prev-custom',
         }}
-        modules={[Navigation]}
-        className="h-full py-12"
+        simulateTouch={true}
+        draggable={true}
+        mousewheel={true}
+        modules={[Navigation, Mousewheel]}
+        className="h-full py-12 cursor-pointer"
+        breakpoints={{
+          // موبایل
+          0: {
+            direction: 'vertical',
+          },
+          // دسکتاپ
+          1024: {
+            direction: 'horizontal',
+          },
+        }}
       >
         {steps.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col gap-3 h-[200px] justify-between">
+            <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col gap-3 h-[200px] md:h-[250px] justify-between">
               <div className="flex items-center gap-3">
                 <div className="bg-yellow-100 text-2xl rounded-lg p-3">{item.icon}</div>
                 <div>
