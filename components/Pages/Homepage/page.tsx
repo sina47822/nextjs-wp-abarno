@@ -3,17 +3,12 @@
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import styles from './styles/main.module.css'
-import LogoCarousel from '@/components/Carousel/logoCarousel'
 import HeaderText from '@/components/Text/header'
 import Featureaccordion from '@/components/Feature/Accordion/Featureaccordion'
 import { FaArrowLeft, FaArrowRight, FaBars, FaBook, FaChartBar, FaChartLine, FaEarlybirds, FaGalacticSenate, FaHandPaper, FaHandshake, FaHeart, FaLightbulb, FaPuzzlePiece } from 'react-icons/fa'
-import BrandStoryCard from './stories/StoriyCard'
-import StoriesCarousel from './stories/StoriesCarousel'
 import VerticalStepsCarousel from './steps/VerticalStepsCarousel'
 import HeroCarousel from './hero/HeroCarousel'
-import NavMenu from './Nav/NavMenu'
-import Footer from './Footer/Footer'
-const newFrontPage = () => {
+const FrontPage = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
   return (
@@ -22,7 +17,6 @@ const newFrontPage = () => {
             <div
                 className='overflow-hidden w-[100%]'
             >
-                <NavMenu />
                 <HeroCarousel />
                 {/* <section className='bg-gray-100 pb-5 pt-5'>
                     <LogoCarousel />
@@ -318,13 +312,11 @@ const newFrontPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className='bg-gray-100 flex items-center justify-center py-10'>
-                    <Footer />        
-                </section>
+
             </div>
         </div>
     </div>
   )
 }
 
-export default newFrontPage
+export default FrontPage
