@@ -8,6 +8,8 @@ import Featureaccordion from '@/components/Feature/Accordion/Featureaccordion'
 import { FaArrowLeft, FaArrowRight, FaBars, FaBook, FaChartBar, FaChartLine, FaEarlybirds, FaGalacticSenate, FaHandPaper, FaHandshake, FaHeart, FaLightbulb, FaPuzzlePiece } from 'react-icons/fa'
 import VerticalStepsCarousel from './steps/VerticalStepsCarousel'
 import HeroCarousel from './hero/HeroCarousel'
+import ShowcaseSection from '../ShowcaseSection'
+import SvgAnimation from './hero/SvgAnimation'
 const FrontPage = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -17,7 +19,14 @@ const FrontPage = () => {
             <div
                 className='overflow-hidden w-[100%]'
             >
-                <HeroCarousel />
+                <ShowcaseSection
+                    title="رشد کسب‌وکارتان از اینجا شروع می‌شود!"
+                    subtitle="حسابداری شنوا و همراه"
+                    description="ما با پرسیدن سوالات درست، نیازهای پنهان کسب‌وکارتان را کشف می‌کنیم."
+                    ctaText="شروع همکاری"
+                    ctaHref="/contact" // ✅ به‌جای onCtaClick مسیر مقصد رو بذار
+                    media={<SvgAnimation />}  
+                />
                 {/* <section className='bg-gray-100 pb-5 pt-5'>
                     <LogoCarousel />
                 </section> */}
