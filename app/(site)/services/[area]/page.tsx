@@ -4,8 +4,9 @@ import { CardItem } from "@/components/Pages/TrendCard";
 import { getCategory } from "@/lib/services";
 import { notFound } from "next/navigation";
 
-export default function AreaPage({ params }: { params: { area: string } }) {
-  const cat = getCategory(params.area);
+export default async function AreaPage({ params }: { params: Promise<{ area: string }> }) {
+  const { area } = await params;
+  const cat = getCategory(area);
   if (!cat) return notFound();
   const items: CardItem[] = cat.items.map((s) => ({
     id: `${cat.key}-${s.slug}`,

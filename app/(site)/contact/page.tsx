@@ -50,7 +50,7 @@ export default function ContactPage() {
       />
 
       {/* عنوان صفحه */}
-      <section className="text-center">
+      <section className="text-center" id="contact">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">ارتباط با ما</h1>
       </section>
 
