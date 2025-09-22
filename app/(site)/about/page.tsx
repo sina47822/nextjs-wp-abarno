@@ -12,10 +12,10 @@ import Image from "next/image";
 
 export default function AboutUsPage() {
   const items: CardItem[] = [
-    { id: "a0", title: "داستان ما", description: "سنگ‌بنای برودار چطور شکل گرفت.", tone: "sage", href: "/about/ourstory" },
-    { id: "a1", title: "تاریخچه", description: "از آبان ۱۳۹۸ تا امروز؛ مسیر رشد ما.", tone: "sand", href: "/about/history" },
+    { id: "a0", title: "داستان ما", description: "سنگ‌بنای برودار چطور شکل گرفت.", tone: "violet", href: "/about/ourstory" },
+    { id: "a1", title: "تاریخچه", description: "از آبان ۱۳۹۸ تا امروز؛ مسیر رشد ما.", tone: "violet", href: "/about/history" },
     { id: "a2", title: "تیم ما", description: "با متخصصان ما آشنا شوید.", tone: "violet", href: "/about/team" },
-    { id: "a3", title: "چشم‌انداز", description: "تصمیم‌سازی مبتنی بر داده برای مدیران.", tone: "teal", href: "/about/vision" },
+    { id: "a3", title: "چشم‌انداز", description: "تصمیم‌سازی مبتنی بر داده برای مدیران.", tone: "violet", href: "/about/vision" },
   ];
 
   const services = [
@@ -93,7 +93,7 @@ export default function AboutUsPage() {
   ];
 
     // تون‌های متناوب برای استپ‌ها
-  const pickStepTone = cycleTones<Tone>([  "cyan", "violet", "indigo","zinc","cyan","amber","lime",]);
+  const pickStepTone = cycleTones(["violet"]);
 
   return (
     <>

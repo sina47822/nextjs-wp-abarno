@@ -17,6 +17,8 @@ export const menuItems: MenuItem[] = [
       { label: "تاریخچه", link: "/about/history" },
       { label: "تیم ما", link: "/about/team" },
       { label: "چشم‌انداز", link: "/about/vision" },
+      { label: "داستان ما", link: "/about/ourstory" },
+
     ],
   },
   {
@@ -75,6 +77,8 @@ export const menuItems: MenuItem[] = [
     submenu: [
       { label: "پروژه‌های موفق", link: "/experiences/projects" },
       { label: "نمونه‌کارها", link: "/experiences/portfolio" },
+      { label: "داستان", link: "/experiences/stories" },
+
     ],
   },
   { label: "ارتباط با ما", link: "/contact", image: "/images/landscape/landscape3.jpg" },
