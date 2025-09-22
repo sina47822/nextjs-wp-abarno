@@ -13,7 +13,7 @@ type TimelineItem = {
 const timeline: TimelineItem[] = [
   {
     year: "آبان ۱۳۹۸",
-    title: "شروع برودار",
+    title: "شروع گندم",
     points: [
       "پروژه‌های اولیه در استانداردسازی حسابداری",
       "تمرکز بر صورت‌های مالی ساده و دقیق",
@@ -53,7 +53,7 @@ export default function HistoryPage() {
   return (
     <main className="container mx-auto px-4 space-y-10">
       <section className={toneWrapper("violet")}>
-        <div className={toneHeader("violet", "mb-4 text-2xl")}>تاریخچه برودار</div>
+        <div className={toneHeader("violet", "mb-4 text-2xl")}>تاریخچه گندم</div>
         <p className="leading-8 text-muted-foreground">
           از آبان ۱۳۹۸ تا امروز، رشد ما با تمرکز بر کیفیت داده و اثربخشی گزارش‌ها رقم خورده است. بخشی از مسیر را در
           این جدول زمانی می‌بینید.

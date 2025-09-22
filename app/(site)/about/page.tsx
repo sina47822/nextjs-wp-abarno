@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function AboutUsPage() {
   const items: CardItem[] = [
-    { id: "a0", title: "داستان ما", description: "سنگ‌بنای برودار چطور شکل گرفت.", tone: "violet", href: "/about/ourstory" },
+    { id: "a0", title: "داستان ما", description: "سنگ‌بنای گندم چطور شکل گرفت.", tone: "violet", href: "/about/ourstory" },
     { id: "a1", title: "تاریخچه", description: "از آبان ۱۳۹۸ تا امروز؛ مسیر رشد ما.", tone: "violet", href: "/about/history" },
     { id: "a2", title: "تیم ما", description: "با متخصصان ما آشنا شوید.", tone: "violet", href: "/about/team" },
     { id: "a3", title: "چشم‌انداز", description: "تصمیم‌سازی مبتنی بر داده برای مدیران.", tone: "violet", href: "/about/vision" },
@@ -116,7 +116,7 @@ export default function AboutUsPage() {
 
       {/* بخش مزایا */}
       <BenefitSection
-        label="چرا برودار؟"
+        label="چرا گندم؟"
         title="فرآیندهای مالی شفاف، تصمیم‌های مطمئن"
         description="با استانداردسازی ساختار حسابداری و استقرار حسابداری مدیریتی، خطاها کاهش می‌یابد، گزارش‌ها قابل اتکا می‌شوند و زمان مدیریت برای تصمیم‌گیری آزاد می‌گردد."
       />
@@ -139,7 +139,7 @@ export default function AboutUsPage() {
           <ToneBlock tone="rose" title="مؤسس و مدیر">
             <p className="leading-8">
               سرکار خانم <strong>گندم برنو</strong> با تعهد، سخت‌کوشی و تخصص حسابداری، همراه و شریک مطمئن کسب‌وکارهای
-              مخاطب برودار هستند.
+              مخاطب گندم هستند.
             </p>
           </ToneBlock>
         </div>
@@ -186,7 +186,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* تاریخچه و لینک‌های تکمیلی */}
-      <SectionGrid title="درباره برودار" items={items} />
+      <SectionGrid title="درباره گندم" items={items} />
 
       {/* بلوک اعتبار و همراهی (می‌تونی به ToneBlock هم تبدیلش کنی) */}
       <section className="container mx-auto px-4 py-12">
